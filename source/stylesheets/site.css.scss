@@ -1,0 +1,29 @@
+@import 'fonts';
+
+@import 'variables';
+@import 'responsive';
+@import 'aal';
+@import 'nav';
+
+
+body {
+  background-color: $background-color;
+  color: $main-color;
+  font-family: $text-font-family;
+
+  padding: 18vh 1rem;
+  text-align: center;
+}
+
+
+
+
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}

@@ -1,0 +1,46 @@
+
+$background-color: #e0ded5;
+$main-color: #333;
+$alternate-color: #aaa;
+
+
+$text-displacement: -9999999px;
+
+$text-font-family: Merriweather, Georgia, serif;
+$heading-font-family: Lato, Helvetica, sans-serif;
+$code-font-family: 'Source Code Pro', 'Lucida Console', monospace;
+
+// Colors
+$bg-color: #FAFAFA !default;
+$fg-color: #212121 !default;
+$alt-bg-color: #E0E0E0 !default;
+$alt-fg-color: #000 !default;
+$link-color: #1565c0 !default;
+
+// Colors dark
+$bg-color-dark: #212121 !default;
+$fg-color-dark: #dadada !default;
+$alt-bg-color-dark: #424242 !default;
+$alt-fg-color-dark: #dadada !default;
+$link-color-dark: #42a5f5 !default;
+
+
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+// Colors
+$blue:   #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink:   #f66D9b;
+$red:    #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green:  #38c172;
+$teal:   #4dc0b5;
+$cyan:   #6cb2eb;
+
+// Behavioural differences;
+// Prefer `@media print` instead when possible.
+$print: false !default;
