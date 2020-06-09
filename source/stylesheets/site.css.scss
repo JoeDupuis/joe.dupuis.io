@@ -1,6 +1,7 @@
 @import 'fonts';
 
 @import 'variables';
+@import 'mixins';
 @import 'responsive';
 @import 'aal';
 @import 'nav';
@@ -10,9 +11,6 @@ body {
   background-color: $background-color;
   color: $main-color;
   font-family: $text-font-family;
-
-  padding: 18vh 1rem;
-  text-align: center;
 }
 
 
