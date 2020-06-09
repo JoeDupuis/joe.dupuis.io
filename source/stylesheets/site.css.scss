@@ -5,6 +5,8 @@
 @import 'responsive';
 @import 'aal';
 @import 'nav';
+@import 'page';
+@import 'index';
 
 
 body {
@@ -13,6 +15,10 @@ body {
   font-family: $text-font-family;
 }
 
+img {
+    max-width:100%;
+    max-height:100%;
+}
 
 
 
