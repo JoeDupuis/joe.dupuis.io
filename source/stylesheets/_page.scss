@@ -1,3 +1,10 @@
 .page {
     margin: 3em;
+
+    &__title {
+        text-align: center;
+        @include responsive-min(md) {
+            text-align: initial;
+        }
+    }
 }

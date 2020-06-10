@@ -1,0 +1,19 @@
+.about {
+    &__photo {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3em;
+        display: block;
+        width: 200px;
+        height: 200px;
+        @include avatar-circle;
+        @include responsive-min(md) {
+            float: left;
+            display: inline-block;
+            padding: 10px;
+            padding-left: 0;
+            margin: initial;
+            shape-outside: circle();
+        }
+    }
+}
