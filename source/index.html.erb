@@ -4,7 +4,9 @@
 
 <div class="index">
   <div class="index__photo">
-    <%= image_tag "joe.jpg" %>
+    <%= link_to :about do
+      image_tag "joe.jpg"
+    end %>
   </div>
   <h1 class="index__title">
     Joe Dupuis
