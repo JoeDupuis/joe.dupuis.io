@@ -6,8 +6,13 @@
 @import 'aal';
 @import 'nav';
 @import 'page';
+@import 'form';
 @import 'index';
+@import 'contact-sent';
 
+* {
+    box-sizing: border-box;
+}
 
 body {
   background-color: $background-color;
