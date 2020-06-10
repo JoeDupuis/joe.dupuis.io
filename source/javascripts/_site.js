@@ -1,4 +1,4 @@
-// This is where it all goes :)
+require("turbolinks").start()
 import "@stimulus/polyfills"
 
 
