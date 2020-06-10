@@ -4,16 +4,56 @@
         margin: 0 auto;
         margin-bottom: 3em;
         display: block;
+        @include avatar-circle;
+    }
+
+    &__me {
         width: 200px;
         height: 200px;
-        @include avatar-circle;
+
         @include responsive-min(md) {
             float: left;
             display: inline-block;
             padding: 10px;
             padding-left: 0;
             margin: initial;
-            shape-outside: circle();
+            shape-outside: ellipse();
         }
     }
+
+    &__game-jams {
+        width: 100%;
+        img {
+            border-radius: 20%;
+        }
+        @include responsive-min(lg) {
+            width: 30%;
+            float: right;
+            display: inline-block;
+            padding: 10px;
+            padding-left: 0;
+            margin: initial;
+            shape-outside: margin-box;
+        }
+    }
+
+
+    &__kayak {
+        width: 100%;
+        img {
+            border-radius: 20%;
+        }
+        @include responsive-min(lg) {
+            width: 30%;
+            float: left;
+            display: inline-block;
+            padding: 20px;
+            padding-left: 0;
+            margin: initial;
+            shape-outside: margin-box;
+        }
+    }
+
+
+
 }
