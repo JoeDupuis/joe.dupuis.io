@@ -44,11 +44,23 @@ activate :external_pipeline,
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def twitter_url
+    "https://twitter.com/_joedupuis"
+  end
+
+  def github_url
+    "https://github.com/JoeDupuis"
+  end
+
+  def gitlab_url
+    "https://gitlab.com/JoeDupuis"
+  end
+
+  def linkedin_url
+    "https://www.linkedin.com/in/joe-dupuis-85345b21/"
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
