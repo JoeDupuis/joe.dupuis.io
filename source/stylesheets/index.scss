@@ -39,7 +39,7 @@
 
         &:hover {
             background-color: rgba(0,0,0,0.1);
-            border-radius: 4%;
+            border-radius: 10%;
         }
 
         background-size: contain;
@@ -49,15 +49,27 @@
 
         &--github {
             background-image: image-url('github.svg');
+            &:hover {
+                background-image: image-url('github-white.svg');
+            }
         }
         &--gitlab {
             background-image: image-url('gitlab.svg');
+            &:hover {
+                background-image: image-url('gitlab-white.svg');
+            }
         }
         &--twitter {
             background-image: image-url('twitter.svg');
+            &:hover {
+                background-image: image-url('twitter-white.svg');
+            }
         }
         &--linkedin {
             background-image: image-url('linkedin-square.svg');
+            &:hover {
+                background-image: image-url('linkedin-square-white.svg');
+            }
         }
     }
 }
