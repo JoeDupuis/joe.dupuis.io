@@ -5,13 +5,15 @@ layout: projects
 
 # Projects
 
-A big chunk of what I worked on over the years was under white label. Some projects could be too small or unsignificant, I don't mention server I manage for clients for example. The list could also be outdated. Therefore this is far from being an exaustive list. More like a wall of honorable mentions
+A big chunk of what I worked on over the years was under white label. Some projects could be too small or insignificant, I don't mention servers I manage for clients, for example. The list could also be outdated. Therefore this is far from being an exhaustive list. More like a wall of honourable mentions
+
+The list is quite technical and was written with the assumption that the reader has some coding knowledge. If you don't have coding knowledge, feel free to skim the technobabble!
 
 Most of the open source projects are old (when I was starting out). Therefore some of the code doesn't represent my current style or the level of quality. Nevertheless they collectively helped sharpen my skills and help showcase the broad range of problems I worked on over the years.
 
-The more recent projects (in no particular order) are the [web development projects](#web-development)
+The more recent projects (in no particular order) are the [web development projects](#web-development).
 
-The [games and tool](#games-and-tool) were done between college and 2013.
+The [games and tool](#games-and-tools) were done between college and 2013.
 
 ## Web development
 
@@ -19,15 +21,15 @@ The [games and tool](#games-and-tool) were done between college and 2013.
 
 <https://www.myvibe.life/>
 
-MyVibe.life is a platform I created for a client where user can accomplish various tasks like play some games and fill some surveys to gain Bam coins they can exchange for gifts and prizes. There is also an instagram like section with an infinite-scroll feed of videos and photos posted by the users.
+MyVibe.life is a platform I created for a client where user can accomplish various tasks like play some games and fill some surveys to gain Bam coins they can exchange for gifts and prizes. There is also an Instagram like section with an infinite-scroll feed of videos and photos posted by the users.
 
 The platform is built on rails/stimulus. With a turbolinks ios app.
 
 ### Intranets
 
-I created a few intranets to handle internal process for various clients.
+I created a few intranets to handle internal processes for various clients.
 
-- Railway and crossings inspection management system. Dealing with scheduling of inspections and resulting reports for Transport Canada. - [Xrail](http://xrail.com/).
+- Railway signals and level-crossing inspections management systems. Dealing with scheduling of inspections and reports for Transport Canada. - [Xrail](http://xrail.com/).
 - HR management system for a Montreal MSP to help with payrolls, vacations, client retainers, etc. - [GroupeSL](https://www.groupesl.com/en/)
 - Factory visitor logbook and credentials management system - [Lerclerc](https://leclerc.ca/)
 
@@ -35,24 +37,24 @@ I created a few intranets to handle internal process for various clients.
 
 <https://www.qidigo.com/login>
 
-The application is a market place for cities and various community centers to sell their activities and courses like yoga or swimming class. It was dealing with registration, list of attendees, payments, tax deduction reports for the users and organizations, etc.
+The application is a market place for cities and various community centres to sell their activities and courses like yoga or swimming class. It was dealing with registration, list of attendees, payments, tax deduction reports for the users and organizations, etc.
 
-At first, we were mandated with writing a few functionality like search using algolia and various reports. Over time our mandate grew and ended up acting as outside consultant and CTO to help their team fix their tech debt issues and oversee the app rewrite. The app had been started by non-coders and interns and needed some serious structural changes for which the client retained our services for around to 2 years.
+At first, we were mandated with writing a few functionality like search using Algolia and various reports. Over time our mandate grew and ended up acting as an outside consultant and CTO to help their team fix their tech debt issues and oversees the app rewrites. The app had been started by non-coders and interns and needed some serious structural changes for which the client retained our services for around to 2 years.
 
 
 ### White label projects
 
-I worked on white label projects for various agencies. As per the contract I cannot disclosed the end client, but here is some example of projects we worked on.
+I worked on white label projects for various agencies. As per the contract I cannot disclose the end client, but here is some example of projects we worked on.
 
-- An iOS and android app to help a nationwide business train their sales rep in a gamified fahsion through quiz, points and prizes.
-- A trivia game with prizes for one of the biggest union in Canada
+- An iOS and android app to help a nationwide business train their sales rep in a gamified fashion through quiz, points and prizes.
+- A trivia game with prizes for one of the biggest unions in Canada
 - We wrote the checkout flow and fixed various tech debt issues on an ecommerce site for a business selling niche accessories grossing in the 7 to 8 figures every year.
 
-## Games and tool
+## Games and tools
 
 ### Games
 
-I worked on a variety of games some for Berzerk Studio, some just for fun (game jams) and some for clients (white label).
+I worked on a variety of games some for Berzerk Studio.
 Here is some of them:
 
 - [Berzerk Ball 2 - Mobile port](https://www.youtube.com/watch?v=SAt04zu03Ek)
@@ -63,13 +65,13 @@ Here is some of them:
 
 ### BaconBox
 
-BaconBox was an open source game engine I started with partners. Freshly out of college, we were overenginnering things and slowly discovering anti-patterns. It went through 3 rewrites. The sources were previously hosted with mercurial, so some of the older code might have been lost.
+BaconBox was an open source game engine I started with partners. Freshly out of college, we were overengineering and using anti-patterns such as deep inheritance, which is why the engine went through 3 rewrites as we were learning best practices. The sources were previously hosted with mercurial, so some of the older code might have been lost.
 
-In the end the engine was a Component-based engine. Similar to how [Unity](https://unity.com/) works.
+In the end the engine was a component-based engine. Similar to how [Unity](https://unity.com/) works.
 
 The input/output and scripting layer were interchangeable. The games could be coded in Lua, C/C++ and some experiments were made with ruby.
 
-The engine was rendering to standard low level rendering APIs like OpenGL, Stage3D and eventually would have also supported DirectX. But was also able to render to more divergent rendering backend, like the vector based api of the Flash runtime. [We also toyed with rendering to CLI.](http://caca.zoy.org/wiki/libcaca)
+The engine was rendering to standard low-level rendering APIs like OpenGL, Stage3D and eventually would have also supported DirectX. It was also able to render to more divergent rendering backend, like the vector-based API of the Flash runtime. [We also toyed with rendering to CLI.](http://caca.zoy.org/wiki/libcaca)
 
 The engine allowed us to use the same codebase to port the flash games to mobile. Modifying only the assets.
 
@@ -87,17 +89,16 @@ Sources:
 
 The Flash exporter was the tooling allowing us to transform complex flash animations to sprite map and xml the engine could use to render outside of flash.
 
-One of the big reason we were using flash animations was the ability to nest components together, name frame/framesets, name components. This allowed to do things like drawing the hitzone or put an invisible dot on the end of a rifle to get it's position at run time to spawn the bullets.
+One of the big reason we were using flash animations was the ability to nest components together, name frame/framesets, name components. This allowed to do things like drawing the hit zone or put an invisible dot on the end of a rifle to get its position at run time to spawn the bullets.
 
-Today most engine support this concept. Unity and Unreal Engine do this through their inhouse editor. As a small studio we leveraged existing tools (at the time) to do the same. The exporter I coded allowed us to extract this information from flash.
-
+Today most engine support this concept. Unity and Unreal Engine do this in their editor instead of using a separate outside program. As a small studio, we leveraged existing tools (at the time) to do the same. The exporter I coded allowed us to extract this information from flash.
 
 Sources: <https://github.com/anhero/BaconBoxFlashExporter>
 
 
 ### Generous
 
-Generous was a "cross-platform/ide project builder generator" (what a mouthful). We were using it to generate Xcode Project, QtCreator Project, Makefiles or just plain dumb script to build our engine and games on all our target platforms.
+Generous was a "cross-platform/ide project builder generator" (that's a mouthful). We were using it to generate Xcode Project, QtCreator Project, Makefiles or just plain dumb script to build our engine and games on all our target platforms.
 
 It was like autoconf, but supporting multiple "project" types, not just makefiles.
 
@@ -108,11 +109,11 @@ Sources: <https://github.com/anhero/generous>
 ### LibBuildTool
 
 Libbuildtool was initially coded in bash and got rewritten in ruby. It was a way for us to build/download/prep the dependencies of a project.
-It was a little bit like nix packages expressions (but using a ruby DSL) allowing us to use predefined builders to easily describe how the build should go. We could overwrite any step of the process through hooks, if we needed to patch the sources before building for example.
+It was a little bit like nix packages expressions (but using a ruby DSL) allowing us to use predefined builders to easily describe how the build should go. We could overwrite any step of the process through hooks if we needed to patch the sources before building, for example.
 
-It supported cross compilation and various build system like CMAKE, Autoconf, etc. and
+It supported cross compilation and various build systems like CMAKE, Autoconf, etc. and
 
-Here is the main libbuildtool file for BaconBox telling libbuildtool what libraries needs to be built for the selected platform: <https://github.com/anhero/BaconBox/blob/develop/libraries/libraries.rb>
+Here is the main libbuildtool file for BaconBox telling libbuildtool what libraries need to be built for the selected platform: <https://github.com/anhero/BaconBox/blob/develop/libraries/libraries.rb>
 
 Here is an example of the DSL needed to build libpng: <https://github.com/anhero/BaconBox/blob/develop/libraries/libpng.desc>
 
@@ -122,8 +123,12 @@ Sources: <https://github.com/anhero/libbuildtool>
 
 ### Crossbridge
 
-I did not code CrossBridge (formerly alchemy and Flascc). CrossBridge was a C/C++ cross compiler for the ActionScript VM (Flash). Adobe abandonned it and we took it over with other contributors. We were trying to keep it alive by maintaining the documentation, forum, etc.
+I did not code CrossBridge (formerly alchemy and Flascc). CrossBridge was a C/C++ cross compiler for the ActionScript VM (Flash). Adobe abandoned it and we took it over with other contributors. We were trying to keep it alive by maintaining the documentation, forum, etc.
 
-We also added new modules and functionallity like the ability to load assets without precompiling them into the Flash bundle:
+We also added new modules and functionality like the ability to load assets without precompiling them into the Flash bundle:
 
 <https://github.com/anhero/flascc-URLLoaderVFS/blob/develop/URLLoaderVFS.as>
+
+I let the domain expire and cancelled the hosting when adobe put the last nail in the flash coffin.
+
+As much as people like to hate on Flash (even me, the thing was full of bugs!) for its flaws and incorrect use in advertising, for games it was pretty much the only solution for years. It took years for the browser to catchup on its functionalities. We were revisiting the idea of porting to HTML5 every few months because of the obvious flash decline. HTML5 was not quite there yet for bigger games and the web game market was still strong. Unity solved this by creating their own plugin, bu you simply can't do that as a small studio (you'll never gain a wide user base). So we stuck with flash and experimented with compiling to unity for web versions of the games while we waited for HTML5 became more viable.
