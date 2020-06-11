@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Joe Dupuis - Projects</title>
+    <link href="/stylesheets/site-44f70b14.css" rel="stylesheet" />
+    <script src="/javascripts/bundle-3412cb94.js"></script>
+  </head>
+  <body>
+    <nav class="main-nav">
+  <h1 class="main-nav__brand"><a href="/">Joe Dupuis</a></h1>
+  <input type="checkbox" id="hamburger" class="main-nav__hamburger-checkbox">
+  <label for="hamburger" class="main-nav__mobile-menu-btn"><span class="main-nav__mobile-menu-btn-text">Menu</span><span class="main-nav__hamburger-menu"></span></label>
+  <ul class="main-nav__list">
+    <li class="main-nav__list-item"><a href="/">Home</a></li>
+    <li class="main-nav__list-item"><a href="/about.html">About</a></li>
+    <li class="main-nav__list-item"><a href="/projects.html">Projects</a></li>
+    <li class="main-nav__list-item"><a href="/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <section class="page">
+        <div class="projects">
+       <h1 id="projects">Projects</h1>
+
+<p>A big chunk of what I worked on over the years was under white label. Some projects could be too small or insignificant, I don't mention servers I manage for clients, for example. The list could also be outdated. Therefore this is far from being an exhaustive list. More like a wall of honourable mentions</p>
+
+<p>The list is quite technical and was written with the assumption that the reader has some coding knowledge. If you don't have coding knowledge, feel free to skim the technobabble!</p>
+
+<p>Most of the open source projects are old (when I was starting out). Therefore some of the code doesn't represent my current style or the level of quality. Nevertheless they collectively helped sharpen my skills and help showcase the broad range of problems I worked on over the years.</p>
+
+<p>The more recent projects (in no particular order) are the <a href="#web-development">web development projects</a>.</p>
+
+<p>The <a href="#games-and-tools">games and tool</a> were done between college and 2013.</p>
+
+<h2 id="web-development">Web development</h2>
+
+<h3 id="myvibe">MyVibe</h3>
+
+<p><a href="https://www.myvibe.life/">https://www.myvibe.life/</a></p>
+
+<p>MyVibe.life is a platform I created for a client where user can accomplish various tasks like play some games and fill some surveys to gain Bam coins they can exchange for gifts and prizes. There is also an Instagram like section with an infinite-scroll feed of videos and photos posted by the users.</p>
+
+<p>The platform is built on rails/stimulus. With a turbolinks ios app.</p>
+
+<h3 id="intranets">Intranets</h3>
+
+<p>I created a few intranets to handle internal processes for various clients.</p>
+
+<ul>
+  <li>Railway signals and level-crossing inspections management systems. Dealing with scheduling of inspections and reports for Transport Canada. - <a href="http://xrail.com/">Xrail</a>.</li>
+  <li>HR management system for a Montreal MSP to help with payrolls, vacations, client retainers, etc. - <a href="https://www.groupesl.com/en/">GroupeSL</a></li>
+  <li>Factory visitor logbook and credentials management system - <a href="https://leclerc.ca/">Lerclerc</a></li>
+</ul>
+
+<h3 id="qidigo">Qidigo</h3>
+
+<p><a href="https://www.qidigo.com/login">https://www.qidigo.com/login</a></p>
+
+<p>The application is a market place for cities and various community centres to sell their activities and courses like yoga or swimming class. It was dealing with registration, list of attendees, payments, tax deduction reports for the users and organizations, etc.</p>
+
+<p>At first, we were mandated with writing a few functionality like search using Algolia and various reports. Over time our mandate grew and ended up acting as an outside consultant and CTO to help their team fix their tech debt issues and oversees the app rewrites. The app had been started by non-coders and interns and needed some serious structural changes for which the client retained our services for around to 2 years.</p>
+
+<h3 id="white-label-projects">White label projects</h3>
+
+<p>I worked on white label projects for various agencies. As per the contract I cannot disclose the end client, but here is some example of projects we worked on.</p>
+
+<ul>
+  <li>An iOS and android app to help a nationwide business train their sales rep in a gamified fashion through quiz, points and prizes.</li>
+  <li>A trivia game with prizes for one of the biggest unions in Canada</li>
+  <li>We wrote the checkout flow and fixed various tech debt issues on an ecommerce site for a business selling niche accessories grossing in the 7 to 8 figures every year.</li>
+</ul>
+
+<h2 id="games-and-tools">Games and tools</h2>
+
+<h3 id="games">Games</h3>
+
+<p>I worked on a variety of games some for Berzerk Studio.
+Here is some of them:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=SAt04zu03Ek">Berzerk Ball 2 - Mobile port</a></li>
+  <li><a href="https://www.youtube.com/watch?v=fMzP_M7IF2s">Berzerk Ball 1 - Japanese port</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Mv5WpDjxcS4">Peacekeeper</a></li>
+  <li><a href="https://www.youtube.com/watch?v=yxMBiI9tSHw">Sand of coliseum - Monster update</a></li>
+</ul>
+
+<h3 id="baconbox">BaconBox</h3>
+
+<p>BaconBox was an open source game engine I started with partners. Freshly out of college, we were overengineering and using anti-patterns such as deep inheritance, which is why the engine went through 3 rewrites as we were learning best practices. The sources were previously hosted with mercurial, so some of the older code might have been lost.</p>
+
+<p>In the end the engine was a component-based engine. Similar to how <a href="https://unity.com/">Unity</a> works.</p>
+
+<p>The input/output and scripting layer were interchangeable. The games could be coded in Lua, C/C++ and some experiments were made with ruby.</p>
+
+<p>The engine was rendering to standard low-level rendering APIs like OpenGL, Stage3D and eventually would have also supported DirectX. It was also able to render to more divergent rendering backend, like the vector-based API of the Flash runtime. <a href="http://caca.zoy.org/wiki/libcaca">We also toyed with rendering to CLI.</a></p>
+
+<p>The engine allowed us to use the same codebase to port the flash games to mobile. Modifying only the assets.</p>
+
+<p>We were also able to live reload code on iOS/android instead of going through the 20 minutes-long build time we were experiencing with unity, allowing us to iterate quickly.</p>
+
+<p>Sources:</p>
+
+<ul>
+  <li><a href="https://github.com/anhero/BaconBox">https://github.com/anhero/BaconBox</a></li>
+  <li><a href="https://github.com/anhero/BaconBox-OLD">https://github.com/anhero/BaconBox-OLD</a></li>
+  <li><a href="https://github.com/anhero/BaconBoxApp-OLD">https://github.com/anhero/BaconBoxApp-OLD</a></li>
+</ul>
+
+<h4 id="baconbox-flash-exporter">BaconBox Flash Exporter</h4>
+
+<p>The Flash exporter was the tooling allowing us to transform complex flash animations to sprite map and xml the engine could use to render outside of flash.</p>
+
+<p>One of the big reason we were using flash animations was the ability to nest components together, name frame/framesets, name components. This allowed to do things like drawing the hit zone or put an invisible dot on the end of a rifle to get its position at run time to spawn the bullets.</p>
+
+<p>Today most engine support this concept. Unity and Unreal Engine do this in their editor instead of using a separate outside program. As a small studio, we leveraged existing tools (at the time) to do the same. The exporter I coded allowed us to extract this information from flash.</p>
+
+<p>Sources: <a href="https://github.com/anhero/BaconBoxFlashExporter">https://github.com/anhero/BaconBoxFlashExporter</a></p>
+
+<h3 id="generous">Generous</h3>
+
+<p>Generous was a "cross-platform/ide project builder generator" (that's a mouthful). We were using it to generate Xcode Project, QtCreator Project, Makefiles or just plain dumb script to build our engine and games on all our target platforms.</p>
+
+<p>It was like autoconf, but supporting multiple "project" types, not just makefiles.</p>
+
+<p>Project using Generous would be configured using yaml like this: <a href="https://github.com/anhero/BaconBox/blob/develop/generous.project">BaconBox Generous project</a>, with possibility of using a ruby DSL.</p>
+
+<p>Sources: <a href="https://github.com/anhero/generous">https://github.com/anhero/generous</a></p>
+
+<h3 id="libbuildtool">LibBuildTool</h3>
+
+<p>Libbuildtool was initially coded in bash and got rewritten in ruby. It was a way for us to build/download/prep the dependencies of a project.
+It was a little bit like nix packages expressions (but using a ruby DSL) allowing us to use predefined builders to easily describe how the build should go. We could overwrite any step of the process through hooks if we needed to patch the sources before building, for example.</p>
+
+<p>It supported cross compilation and various build systems like CMAKE, Autoconf, etc. and</p>
+
+<p>Here is the main libbuildtool file for BaconBox telling libbuildtool what libraries need to be built for the selected platform: <a href="https://github.com/anhero/BaconBox/blob/develop/libraries/libraries.rb">https://github.com/anhero/BaconBox/blob/develop/libraries/libraries.rb</a></p>
+
+<p>Here is an example of the DSL needed to build libpng: <a href="https://github.com/anhero/BaconBox/blob/develop/libraries/libpng.desc">https://github.com/anhero/BaconBox/blob/develop/libraries/libpng.desc</a></p>
+
+<p>Sources: <a href="https://github.com/anhero/libbuildtool">https://github.com/anhero/libbuildtool</a></p>
+
+<h3 id="crossbridge">Crossbridge</h3>
+
+<p>I did not code CrossBridge (formerly alchemy and Flascc). CrossBridge was a C/C++ cross compiler for the ActionScript VM (Flash). Adobe abandoned it and we took it over with other contributors. We were trying to keep it alive by maintaining the documentation, forum, etc.</p>
+
+<p>We also added new modules and functionality like the ability to load assets without precompiling them into the Flash bundle:</p>
+
+<p><a href="https://github.com/anhero/flascc-URLLoaderVFS/blob/develop/URLLoaderVFS.as">https://github.com/anhero/flascc-URLLoaderVFS/blob/develop/URLLoaderVFS.as</a></p>
+
+<p>I let the domain expire and cancelled the hosting when adobe put the last nail in the flash coffin.</p>
+
+<p>As much as people like to hate on Flash (even me, the thing was full of bugs!) for its flaws and incorrect use in advertising, for games it was pretty much the only solution for years. It took years for the browser to catchup on its functionalities. We were revisiting the idea of porting to HTML5 every few months because of the obvious flash decline. HTML5 was not quite there yet for bigger games and the web game market was still strong. Unity solved this by creating their own plugin, bu you simply can't do that as a small studio (you'll never gain a wide user base). So we stuck with flash and experimented with compiling to unity for web versions of the games while we waited for HTML5 became more viable.</p>
+
+  </div>
+
+    </section>
+  </body>
+</html>
