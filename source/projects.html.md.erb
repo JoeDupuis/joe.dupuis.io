@@ -87,18 +87,18 @@ Sources:
 
 #### BaconBox Flash Exporter
 
-The Flash exporter was the tooling allowing us to transform complex flash animations to sprite map and xml the engine could use to render outside of flash.
+The Flash exporter was the tooling allowing us to transform complex flash animations to sprite map and xml files the engine could use to render outside of flash.
 
-One of the big reason we were using flash animations was the ability to nest components together, name frame/framesets, name components. This allowed to do things like drawing the hit zone or put an invisible dot on the end of a rifle to get its position at run time to spawn the bullets.
+One of the big reason we were using flash animations was the ability to nest components together, name frames/framesets, name components. This allowed to do things like drawing the hit zone or put an invisible dot on the end of a rifle to get its position at run time to spawn the bullets.
 
-Today most engine support this concept. Unity and Unreal Engine do this in their editor instead of using a separate outside program. As a small studio, we leveraged existing tools (at the time) to do the same. The exporter I coded allowed us to extract this information from flash.
+Today most engine support this concept. Unity and Unreal Engine do this in their editor instead of using a separate outside program. As a small studio, we leveraged existing tools to do the same. The exporter I coded allowed us to extract this information from flash.
 
 Sources: <https://github.com/anhero/BaconBoxFlashExporter>
 
 
 ### Generous
 
-Generous was a "cross-platform/ide project builder generator" (that's a mouthful). We were using it to generate Xcode Project, QtCreator Project, Makefiles or just plain dumb script to build our engine and games on all our target platforms.
+Generous was a "cross-platform/ide project builder generator" (that's a mouthful). We were using it to generate Xcode Projects, QtCreator Projects, Makefiles or just plain dumb scripts to build our engine and games on all our target platforms.
 
 It was like autoconf, but supporting multiple "project" types, not just makefiles.
 
@@ -131,4 +131,4 @@ We also added new modules and functionality like the ability to load assets with
 
 I let the domain expire and cancelled the hosting when adobe put the last nail in the flash coffin.
 
-As much as people like to hate on Flash (even me, the thing was full of bugs!) for its flaws and incorrect use in advertising, for games it was pretty much the only solution for years. It took years for the browser to catchup on its functionalities. We were revisiting the idea of porting to HTML5 every few months because of the obvious flash decline. HTML5 was not quite there yet for bigger games and the web game market was still strong. Unity solved this by creating their own plugin, bu you simply can't do that as a small studio (you'll never gain a wide user base). So we stuck with flash and experimented with compiling to unity for web versions of the games while we waited for HTML5 became more viable.
+As much as people like to hate on Flash for its flaws (even me, the thing was full of bugs!) and incorrect use in advertising. For games it was pretty much the only solution for years. It took years for the browser to catchup on its functionalities. We were revisiting the idea of porting to HTML5 every few months because of the obvious flash decline. HTML5 was not quite there yet for bigger games and the web game market was still strong. Unity solved this by creating their own plugin, but you simply can't do that as a small studio (you'll never gain a wide user base). So we stuck with flash and experimented with compiling to unity for web versions of the games while we waited for HTML5 became more viable.
