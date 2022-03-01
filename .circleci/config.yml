@@ -3,13 +3,13 @@ jobs:
   deploy:
     docker:
       - image: nixos/nix
+    resource_class: small
     steps:
       - add_ssh_keys:
           fingerprints:
             - "bb:76:7f:e4:82:95:c5:32:b9:54:2b:1c:49:94:86:a6"
       - checkout
-      - checkout:
-          path: "build"
+      - run: "git clone git@github.com:JoeDupuis/joe.dupuis.io.git build"
       - run: '(cd build && git config --local user.name "${GIT_NAME:-Joe the robot}")'
       - run: '(cd build && git config --local user.email "${GIT_EMAIL:-joe@dupuis.io}")'
       - run: "(cd build && git checkout gh-pages)"
@@ -24,7 +24,7 @@ jobs:
           command: 'COMMIT_MESSAGE=$(git log -1 --format=%B -n 1) && (cd build && git add -A && git commit -m "$COMMIT_MESSAGE")'
       - run:
           name: "Deploy"
-          command: '(cd build && GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" git push)'
+          command: 'nix-shell --run "(cd build && GIT_SSH_COMMAND=\"ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no\" git push)"'
 workflows:
   deploy:
     jobs:

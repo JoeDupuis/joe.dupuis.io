@@ -18,6 +18,7 @@ pkgs.mkShell {
     libxml2
     nodejs
     yarn
+    openssh
     circleci-cli
   ];
 }
