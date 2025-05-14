@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,6 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title ? "Joe Dupuis - #{current_page.data.title}" : "Joe Dupuis" %></title>
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "bundle" %>
   </head>
   <body>
     <%# partial :nav %>

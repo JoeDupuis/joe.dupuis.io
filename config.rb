@@ -5,8 +5,6 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :livereload
-
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -16,15 +14,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 ignore '**/.keep'
-ignore 'javascripts/controllers/**'
-
 activate :asset_hash
-
-activate :external_pipeline,
-         name: :webpack,
-         command: build? ?  "yarn run build" : "yarn run start",
-         source: ".tmp/dist",
-         latency: 1
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -67,5 +57,5 @@ end
 
 # configure :build do
 #   activate :minify_css
-#   activate :minify_javascript
+#   activate :minify_javascript, compressor: Terser.new
 # end
