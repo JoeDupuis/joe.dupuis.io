@@ -4,6 +4,9 @@ image: joedupuis/joedupuisio
 servers:
   - filecrypt
 
+logging:
+  driver: journald
+
 proxy:
   ssl: true
   hosts:
@@ -15,15 +18,13 @@ proxy:
       - X-Forwarded-Proto
     response_headers:
       - X-Request-ID
+  healthcheck:
+    path: "/"
 
 registry:
   username: joedupuis
   password:
     - KAMAL_REGISTRY_PASSWORD
-
-proxy:
-  healthcheck:
-    path: /
 
 builder:
   arch: amd64
