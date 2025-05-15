@@ -1,0 +1,48 @@
+:root {
+  --background-color: #e0ded5;
+  --main-color: #333;
+  --alternate-color: #aaa;
+  --text-displacement: -9999999px;
+  --text-font-family: Merriweather, Georgia, serif;
+  --heading-font-family: Lato, Helvetica, sans-serif;
+  --code-font-family: 'Source Code Pro', 'Lucida Console', monospace;
+  --bg-color: #FAFAFA;
+  --fg-color: #212121;
+  --alt-bg-color: #E0E0E0;
+  --alt-fg-color: #000;
+  --link-color: #1565c0;
+  --bg-color-dark: #212121;
+  --fg-color-dark: #dadada;
+  --alt-bg-color-dark: #424242;
+  --alt-fg-color-dark: #dadada;
+  --link-color-dark: #42a5f5;
+  --font-size-base: 0.9rem;
+  --line-height-base: 1.6;
+  --border-radius: 4px;
+  
+  /* Colors */
+  --blue: #3490dc;
+  --indigo: #6574cd;
+  --purple: #9561e2;
+  --pink: #f66D9b;
+  --red: #e3342f;
+  --orange: #f6993f;
+  --yellow: #ffed4a;
+  --green: #38c172;
+  --teal: #4dc0b5;
+  --cyan: #6cb2eb;
+  --white: #ffffff;
+  
+  /* Navigation Variables */
+  --main-nav-btn-delay: 0.1s;
+  --main-nav-spacing: 1em;
+  --hamburger-width: 2rem;
+  --hamburger-height: 0.19rem;
+  --hamburger-spread: 0.43rem;
+  
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

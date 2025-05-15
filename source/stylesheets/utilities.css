@@ -1,0 +1,23 @@
+/* Utility Classes */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text-displacement {
+  text-indent: var(--text-displacement);
+}
+
+.avatar-circle img {
+  box-shadow: 0 0 10px -4px black;
+  border-radius: 100%;
+}
+
+/* Responsive Wrapper */
+.responsive-wrapper {
+  overflow-x: auto;
+}

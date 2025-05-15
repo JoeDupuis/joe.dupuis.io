@@ -1,0 +1,66 @@
+.about__photo {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  display: block;
+}
+
+.about__photo img {
+  box-shadow: 0 0 10px -4px black;
+  border-radius: 100%;
+}
+
+.about__me {
+  width: 200px;
+  height: 200px;
+}
+
+.about__game-jams {
+  width: 100%;
+}
+
+.about__game-jams img {
+  border-radius: 10%;
+}
+
+.about__kayak {
+  width: 100%;
+}
+
+.about__kayak img {
+  border-radius: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .about__me {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 0;
+    margin: initial;
+    shape-outside: ellipse();
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about__game-jams {
+    width: 30%;
+    float: right;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 0;
+    margin: initial;
+    shape-outside: margin-box;
+  }
+  
+  .about__kayak {
+    width: 30%;
+    float: left;
+    display: inline-block;
+    padding: 20px;
+    padding-left: 0;
+    margin: initial;
+    margin-right: 3em;
+    shape-outside: margin-box;
+  }
+}
