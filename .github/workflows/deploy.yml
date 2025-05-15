@@ -32,3 +32,5 @@ jobs:
         run: bin/kamal deploy
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          OP_ACCOUNT: ${{ secrets.OP_ACCOUNT }}
+          OP_SECRETS: ${{ secrets.OP_SECRETS }}
