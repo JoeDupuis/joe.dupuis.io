@@ -1,0 +1,9 @@
+# Devenv
+/.direnv
+/.envrc
+.devenv*
+devenv.local.nix
+vendor/bundle
+
+# direnv
+.direnv
