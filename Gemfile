@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.5'
+gem 'middleman', github: 'middleman/middleman', branch: 'main'
+gem "kamal", '>= 2'
