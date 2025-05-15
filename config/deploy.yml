@@ -1,0 +1,29 @@
+service: joedupuis
+image: joedupuis/joedupuisio
+
+servers:
+  - filecrypt
+
+proxy:
+  ssl: true
+  hosts:
+    - dupuis.io
+    - joe.dupuis.io
+  forward_headers: true
+  logging:
+    request_headers:
+      - X-Forwarded-Proto
+    response_headers:
+      - X-Request-ID
+
+registry:
+  username: joedupuis
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+proxy:
+  healthcheck:
+    path: /
+
+builder:
+  arch: amd64
