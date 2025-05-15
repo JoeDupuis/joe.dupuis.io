@@ -1,10 +1,3 @@
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -57,5 +50,4 @@ end
 
 # configure :build do
 #   activate :minify_css
-#   activate :minify_javascript, compressor: Terser.new
 # end

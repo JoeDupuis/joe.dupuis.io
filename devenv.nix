@@ -10,6 +10,5 @@ with pkgs; {
   ];
 
   languages.ruby.enable = true;
-  # Use a specific Ruby version since no .ruby-version file is found
   languages.ruby.version = "3.1.3";
 }
