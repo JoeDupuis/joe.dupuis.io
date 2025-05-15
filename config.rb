@@ -43,6 +43,11 @@ helpers do
   def linkedin_url
     "https://www.linkedin.com/in/joe-dupuis-85345b21/"
   end
+
+  def stylesheet_link_all
+    css_files = Dir.glob("source/stylesheets/*.css").map { |path| File.basename(path, ".css") }
+    css_files.map { |file| stylesheet_link_tag(file) }.join("\n    ")
+  end
 end
 
 # Build-specific configuration
