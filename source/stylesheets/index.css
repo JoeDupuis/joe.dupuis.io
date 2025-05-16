@@ -84,3 +84,11 @@
 .index__nav-link--linkedin:hover {
   background-image: url('../images/linkedin-square-white.svg');
 }
+
+.index__nav-link--mastodon {
+  background-image: url('../images/mastodon.svg');
+}
+
+.index__nav-link--mastodon:hover {
+  background-image: url('../images/mastodon-white.svg');
+}
