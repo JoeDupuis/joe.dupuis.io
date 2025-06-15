@@ -13,7 +13,7 @@ pkgs.mkShell {
   RUBYOPT = "-W:no-deprecated -W:no-experimental -W0";
 
   buildInputs = with pkgs; [
-    ruby_2_7
+    ruby_3_2
     zlib
     libxml2
     nodejs
