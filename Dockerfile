@@ -1,4 +1,4 @@
-FROM ruby:3.1.3-slim as builder
+FROM ruby:3.2.3-slim as builder
 
 RUN apt-get update && apt-get install -y \
     build-essential \

@@ -152,5 +152,8 @@ DEPENDENCIES
   kamal (>= 2)
   middleman!
 
+RUBY VERSION
+   ruby 3.2.3p157
+
 BUNDLED WITH
    2.1.4
