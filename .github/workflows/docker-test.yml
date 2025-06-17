@@ -1,0 +1,29 @@
+name: Build and Test Docker
+
+on:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: |
+          docker build -t site .
+      - name: Run container
+        run: |
+          docker run -d -p 8080:80 --name site site
+      - name: Wait for service
+        run: |
+          for i in {1..30}; do
+            curl -f http://localhost:8080/ && exit 0
+            sleep 1
+          done
+          echo "Service failed to start" >&2
+          docker logs site
+          exit 1
+      - name: Cleanup
+        if: always()
+        run: |
+          docker rm -f site
