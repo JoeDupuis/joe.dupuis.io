@@ -7,7 +7,15 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 ignore '**/.keep'
-activate :asset_hash
+activate :asset_hash, ignore: ["feed.xml"]
+
+activate :blog do |blog|
+  blog.prefix = "articles"
+  blog.permalink = "{title}.html"
+  blog.sources = "{title}.html"
+  blog.layout = "article"
+  blog.default_extension = ".md"
+end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

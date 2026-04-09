@@ -1,0 +1,22 @@
+---
+title: Content
+---
+
+<div class="content-page">
+  <h1 class="content-page__title">Content</h1>
+
+  <div class="content-page__list">
+    <% blog.articles.each do |article| %>
+      <% url = article.data.external_url || article.url %>
+      <% external = article.data.external_url.present? %>
+      <a href="<%= url %>" class="content-page__item" <% if external %>target="_blank" rel="noopener"<% end %>>
+        <div class="content-page__item-meta">
+          <span class="content-page__badge content-page__badge--<%= article.data.kind %>"><%= article.data.kind.upcase %></span>
+          <span class="content-page__source"><%= article.data.source %> &middot; <%= article.date.strftime("%b %Y") %></span>
+        </div>
+        <h2 class="content-page__item-title"><%= article.title %></h2>
+        <p class="content-page__item-description"><%= article.data.description %></p>
+      </a>
+    <% end %>
+  </div>
+</div>

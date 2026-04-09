@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "middleman",
+      "runtimeExecutable": ".claude/start-preview.sh",
+      "port": 4567
+    }
+  ]
+}

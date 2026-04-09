@@ -1,0 +1,32 @@
+---
+layout: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Joe Dupuis</title>
+  <id>https://joe.dupuis.io</id>
+  <link href="https://joe.dupuis.io/feed.xml" rel="self"/>
+  <link href="https://joe.dupuis.io"/>
+  <% unless blog.articles.empty? %>
+  <updated><%= blog.articles.first.date.to_time.iso8601 %></updated>
+  <% end %>
+  <author><name>Joe Dupuis</name></author>
+  <% blog.articles.each do |article| %>
+  <% article_url = article.data.external_url || "https://joe.dupuis.io#{article.url}" %>
+  <entry>
+    <title><%= article.title %></title>
+    <link href="<%= article_url %>" rel="alternate"/>
+    <id><%= article_url %></id>
+    <published><%= article.date.to_time.iso8601 %></published>
+    <updated><%= article.date.to_time.iso8601 %></updated>
+    <% if article.data.description %>
+    <summary><%= article.data.description %></summary>
+    <% end %>
+    <% if article.data.external_url %>
+    <content type="html">&lt;p&gt;<%= article.data.description %>&lt;/p&gt;&lt;p&gt;&lt;a href="<%= article.data.external_url %>"&gt;Read on <%= article.data.source %>&lt;/a&gt;&lt;/p&gt;</content>
+    <% elsif article.body.present? %>
+    <content type="html"><%= ERB::Util.html_escape(article.body) %></content>
+    <% end %>
+  </entry>
+  <% end %>
+</feed>
