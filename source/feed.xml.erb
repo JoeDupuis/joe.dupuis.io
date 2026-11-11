@@ -23,7 +23,7 @@ layout: false
     <summary><%= article.data.description %></summary>
     <% end %>
     <% if article.data.external_url %>
-    <content type="html">&lt;p&gt;<%= article.data.description %>&lt;/p&gt;&lt;p&gt;&lt;a href="<%= article.data.external_url %>"&gt;Read on <%= article.data.source %>&lt;/a&gt;&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;<%= article.data.description %>&lt;/p&gt;&lt;p&gt;&lt;a href="<%= article.data.external_url %>"&gt;<%= article.data.kind == "talk" ? "Watch" : "Read" %> on <%= article.data.source %>&lt;/a&gt;&lt;/p&gt;</content>
     <% elsif article.body.present? %>
     <content type="html"><%= ERB::Util.html_escape(article.body) %></content>
     <% end %>

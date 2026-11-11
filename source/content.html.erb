@@ -2,14 +2,32 @@
 title: Content
 ---
 
+<% kinds = blog.articles.map { |a| a.data.kind }.compact.uniq.sort %>
+
+<style>
+<% kinds.each do |kind| %>
+  .content-page:has(#content-filter-<%= kind %>:checked) .content-page__item:not([data-kind="<%= kind %>"]) { display: none; }
+<% end %>
+</style>
+
 <div class="content-page">
   <h1 class="content-page__title">Content</h1>
+
+  <fieldset class="content-page__filters">
+    <legend class="content-page__filters-legend">Filter by type</legend>
+    <input type="radio" name="content-filter" id="content-filter-all" class="content-page__filter-input" checked>
+    <label for="content-filter-all" class="content-page__filter">All</label>
+    <% kinds.each do |kind| %>
+      <input type="radio" name="content-filter" id="content-filter-<%= kind %>" class="content-page__filter-input">
+      <label for="content-filter-<%= kind %>" class="content-page__filter"><%= kind.capitalize %>s</label>
+    <% end %>
+  </fieldset>
 
   <div class="content-page__list">
     <% blog.articles.each do |article| %>
       <% url = article.data.external_url || article.url %>
       <% external = article.data.external_url.present? %>
-      <a href="<%= url %>" class="content-page__item" <% if external %>target="_blank" rel="noopener"<% end %>>
+      <a href="<%= url %>" class="content-page__item" data-kind="<%= article.data.kind %>" <% if external %>target="_blank" rel="noopener"<% end %>>
         <div class="content-page__item-meta">
           <span class="content-page__badge content-page__badge--<%= article.data.kind %>"><%= article.data.kind.upcase %></span>
           <span class="content-page__source"><%= article.data.source %> &middot; <%= article.date.strftime("%b %Y") %></span>
