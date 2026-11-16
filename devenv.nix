@@ -10,5 +10,5 @@ with pkgs; {
   ];
 
   languages.ruby.enable = true;
-  languages.ruby.version = "3.2.11";
+  languages.ruby.version = "3.2";
 }
